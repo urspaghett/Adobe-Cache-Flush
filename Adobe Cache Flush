@@ -1,0 +1,4 @@
+#!/bin/sh
+currUser=$( who | awk '/console/{ print $1 }' )
+
+rm -r /Users/$currUser/Library/Caches/Adobe/*
